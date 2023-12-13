@@ -69,4 +69,7 @@ ggplot(gapminder_data)+
   aes(x= year, y= lifeExp, color= continent)+
   geom_point()+
   labs(x= "Year", y= "Life Expectancy")
+
+ggsave("figures/gdpPerCap_lifeExp.png")
+
     
