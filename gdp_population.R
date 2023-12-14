@@ -53,7 +53,7 @@ ggplot(data = gapminder_1997)+
        title = "Do People in Wealthy Countries Live Longer?",
        size= "Population (millions)")
 
-gapminder_data <- read_csv("gapminder_data.csv")  
+gapminder_data <- read_csv("figures/gapminder_data.csv")  
 dim(gapminder_data)
 head(gapminder_data)
 
