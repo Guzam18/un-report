@@ -8,19 +8,19 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-```{r packages}
+```{r packages, include= FALSE}
 library(tidyverse)
 ```
 This report was prepared to the attention of the United Nations. 
 
-```{r data}
+```{r data, include=FALSE}
 gapminder_1997 <- read_csv("data/gapminder_1997.csv")
 ```
-ggplot(gdpPercap, lifeExp, in points, color by continent, population size by millions)
-```{r GDP Per Capita by Life Expectancy}
+
+```{r GDP Per Capita by Life Expectancy, echo=FALSE}
 ggplot(data = gapminder_1997) + 
   aes(gdpPercap, lifeExp, color = continent, size = pop/1000000)+
   geom_point()+
-  labs(x = "GDP Per Capita", y = "Life Expectancy", size = "Population (millions)", title = "Country's Life Expectancy by GDP Per Capita ")
+  labs(x = "GDP Per Capita", y = "Life Expectancy", size = "Population (millions)", title = "Does GDP Per Capita Influence Life Expectancy? ")
 ```
 
